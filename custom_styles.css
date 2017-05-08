@@ -1,0 +1,488 @@
+/*
+
+CUSTOM COLORS TO MAKE RSTUDIO DARK
+
+Original file from from zencoder with install guide can be found here:
+https://support.rstudio.com/hc/en-us/community/posts/115000437028-Dark-style-for-R-Studio-IDE
+
+With mayor changes from DdS 3.5.2017
+Looks nice with the "Vibrant Ink" Apperance
+*/
+
+body {
+  color: #9e9e9e !important;
+  background: none #262628 !important;
+  font-family: Lucida Grande, Lucida Sans Unicode, Helvetica, sans-serif !important;
+}
+
+/* Make the scrollbars darker */
+::-webkit-scrollbar {
+  width:9px !important; height: 9px !important;
+}
+
+::-webkit-scrollbar-track {
+  background:#262628 !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background:#9e9e9e !important;
+}
+
+/* app bg */
+.windowframe {
+  background: none #202022 !important;
+  margin: -3px -3px -5px -3px !important;
+}
+
+.ace_gutter {
+  color: #6e6e6e !important;
+  background: none #262628 !important;
+  border-right: 1px solid #283C5A !important;
+}
+
+.ace_editor {
+  color: #9e9e9e !important;
+  background: none #202022 !important;
+}
+
+/* editors status line */
+.GCWXI2KCPIC, .GCWXI2KCKIC {
+  color: #9e9e9e !important;
+  background: none #202022 !important;
+  border-right: 1px solid #283C5A !important;
+}
+
+/* console */
+.GCWXI2KCMN, .GCWXI2KCKN, .GCWXI2KCLN, .GCWXI2KCMS, .GCWXI2KCFS {
+  color: #9e9e9e !important;
+  background: none #262628 !important;
+  text-shadow: none !important;
+}
+
+.GGHFMYIBFR {
+  background-color: #262628 !important;
+  color: #9e9e9e !important;
+}
+
+.GGHFMYIBMS {
+  color: #9e9e9e !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+}
+
+.GGHFMYIBLN {
+  color: #6e6e6e !important;
+  background: none #262628 !important;
+  background-color: #262628 !important;
+}
+
+.GGHFMYIBFS {
+  font-weight: bold !important;
+  color: #9e9e9e !important;
+  text-shadow: none !important;
+}
+
+.GGHFMYIBKN {
+  color: #6e6e6e !important;
+  background: none #262628 !important;
+}
+
+/* search */
+
+.search > div {
+  color: #6e6e6e !important;
+  background: none #202022 !important;
+}
+
+
+.GCWXI2KCKR {
+  color: #9e9e9e !important;
+  background: none #202022 !important;
+}
+
+/* tabs */
+.gwt-TabLayoutPanelTabs {
+  color: #9e9e9e !important;
+  background: #262628 !important;
+}
+/* selected tab */
+.gwt-TabLayoutPanelTab-selected .GCWXI2KCAR, 
+.gwt-TabLayoutPanelTab-selected .GCWXI2KCHS,
+.gwt-TabLayoutPanelTab-selected .GGHFMYIBIS,
+.gwt-TabLayoutPanelTab-selected .GGHFMYIBHS,
+.gwt-TabLayoutPanelTab-selected .GGHFMYIBJS {
+  color: #262628 !important;
+  background: none  #9e9e9e !important;
+  background-color:  #9e9e9e !important;  
+}
+
+.GCWXI2KCIS, .GCWXI2KCJS {
+  background: none #323233!important;
+}
+
+/* panels toolbars */
+.GCWXI2KCNS  {
+  color: #9e9e9e !important;
+  background: #303030 !important;
+}
+
+/* environment bg */
+
+.GGHFMYIBMXC {
+  background-color: #202022 !important;
+}
+
+.GCWXI2KCMH {
+  color: #6e6e6e !important;
+  background: none #262628 !important;
+  background-color: #303030 !important;
+}
+
+
+.GGHFMYIBORB table {
+  border-collapse: collapse !important;
+  background-color: #202022 !important;
+  border: 1px solid #262628 !important;
+}
+.GGHFMYIBORB td {
+  border-collapse: collapse !important;
+  background-color: #202022 !important;
+  border: 1px solid #262628  !important;
+  border-bottom-color:  #9e9e9e !important;
+}
+
+/* subheadings table: Data, values, functions */
+.GGHFMYIBHRB {
+  color: #ff6600 !important;
+  font-weight: bold !important;
+}
+
+/* environment header */
+.GCWXI2KCANB {
+  color: #6e6e6e !important;
+  background: none #262628 !important;
+  border: 1px solid #262628!important; 
+}
+
+/* environment data */
+.GCWXI2KCINB table, .GCWXI2KCINB td,
+.GCWXI2KCOMB {
+  color: #9e9e9e !important;
+  background: none #262628 !important;
+  border: 1px dotted #9e9e9e !important; 
+}
+
+/* history */
+.GCWXI2KCMQB {
+  color: #9e9e9e !important;
+  background: none #202022 !important;
+}
+
+/* files*/
+.GCWXI2KCCPB, .GCWXI2KCCQB, .GCWXI2KCJPB,
+.GCWXI2KCEQB, .GCWXI2KCMPB, .GCWXI2KCKPB,
+.GCWXI2KCDQB, .GCWXI2KCLPB {
+  color: #9e9e9e !important;
+  background: none #262628 !important;
+  background-color:  #262628 !important;
+  border: 1px solid transparent !important; 
+  border-bottom: 1px dotted #283C5A !important;
+}
+/* files headers*/
+.GCWXI2KCIQB th {
+  color: #9e9e9e !important;
+  background: #262628 !important;
+  border: 1px solid transparent !important; 
+  border-bottom: 1px dotted #283C5A !important;
+}
+/* files names*/
+.GCWXI2KCEI, .GCWXI2KCOP {
+  color: #ff6600 !important;
+}
+
+/* Home Cell & Name Values */
+.GGHFMYIBFJ, .GGHFMYIBOI,
+.GGHFMYIBHI, .GGHFMYIBII{
+  color: #4b4bb4 !important;
+  background-color: #262628 !important;
+  border: 1px solid transparent !important;
+}
+
+.GGHFMYIBNR {
+  color: #4b4bb4 !important;
+  background: none #262628 !important;
+  border: 1px solid transparent !important;
+}
+
+.breadcrumb {
+  background: none #262628 !important;
+}
+
+.GGHFMYIBNTB {
+  border: 1px solid transparent !important;
+  font-weight: bold !important;
+  color: #ff6600 !important;
+  background-color: #262628 !important;
+}
+
+/* Files Table */
+.GGHFMYIBITB, .GGHFMYIBHUB, .GGHFMYIBPTB, .GGHFMYIBJUB, .GGHFMYIBCUB, .GGHFMYIBAUB {
+  border: 1px solid #262628   !important;
+  color: #9e9e9e !important;
+  background: none #202022 !important;
+  background-color: #202022 !important;
+}
+
+
+/* packages */
+.GCWXI2KCBWB, .GCWXI2KCDWB, .GCWXI2KCCXB, .GCWXI2KCEWB, .GCWXI2KCBXB, .GCWXI2KCCXB, .GGHFMYIBG1B, .GGHFMYIBH0B 
+{
+  color: #ff6600 !important;
+  background: none #202022 !important;
+  border: 1px solid #262628 !important; 
+}
+
+/* packages table headers*/
+.GCWXI2KCIWB {
+  color: #ff6600 !important;
+  background: none #262628 !important;
+  border: 1px solid #262628 !important; 
+}
+
+/* packages Table borders*/
+.GGHFMYIBI0B, .GGHFMYIBH1B {
+  border: 1px solid #262628 !important;
+}
+
+/* packages Table Head */
+.GGHFMYIBN0B {
+  color: #ff6600 !important;
+  background-color: #262628 !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+  border: 1px solid #262628 !important; 
+}
+
+/* Head User Lib & Sys Lib */
+.GGHFMYIBNYB h1 {
+  color: #ff6600 !important;
+}
+
+.GGHFMYIBPQ  {
+  background: none #202022 !important;
+  background-color: #262628 !important;
+}
+
+/* Packagenames */
+.GGHFMYIBEI {
+  color: #4b4bb4 !important;
+  background-color: #202022 !important;
+}
+
+/* Min max Window top right */
+.GGHFMYIBAR {
+  background: none #262628 !important;
+  background-color: #262628 !important;
+}
+
+/* second Menu row beneath tabs */
+.GGHFMYIBNS * {
+  margin-top: 0 !important;
+  color: rgb(215, 155, 25) !important;
+  background: none #262628 !important;
+  background-color: #262628 !important;
+}
+
+.GGHFMYIBNS {
+  background: none #262628 !important;
+  background-color: #262628 !important;
+}
+
+/* Foot Script window */
+.GGHFMYIBERC .GGHFMYIBPQC {
+  display: block !important;
+  cursor: default !important;
+  color: #9e9e9e !important;
+  background-position: right 0 !important;
+  background: none !important;
+  background-repeat: no-repeat !important;
+  background-color: #262628  !important;
+}
+
+
+/* Changes 5.5.17  custom styles */
+
+/* Background autocomplete */
+.windows .GGHFMYIBBU, .windows .GGHFMYIBBU td, .windows .GGHFMYIBBU pre, .ubuntu_mono .GGHFMYIBBU, .ubuntu_mono .GGHFMYIBBU td, .ubuntu_mono .GGHFMYIBBU pre {
+line-height: 1.2 !important;
+background-color: #303030;
+color: #9e9e9e;
+}
+
+/* pop up ctr+f */
+.GGHFMYIBKAC div, .GGHFMYIBKAC td {
+white-space: nowrap !important;
+background-color: #303030 !important;
+background: none #303030 !important;
+color: #9e9e9e !important;
+}
+
+.GGHFMYIBGVB {
+background: none #303030 !important; 
+background-color: none #303030 !important;
+color: #9e9e9e !important;
+}
+
+/* search & replace fields */
+.GGHFMYIBJR {
+color: rgb(236, 174, 28) !important;
+background-color: transparent !important;
+}
+
+/* envirment */
+/* highlighted from search */
+.GGHFMYIBOSB {
+background-color: #9e9e9e !important;
+color: #202020 !important;
+}
+
+/* history */
+/* search */
+.GGHFMYIBJVB {
+background: none !important; }
+
+/* pop up box (search)*/
+.gwt-SuggestBoxPopup {
+background-color: #ff6600 !important;
+}
+
+.gwt-MenuItem {
+background: none  #9e9e9e !important;
+color: #303030 !important;
+}
+.gwt-MenuItemSeparator .menuSeparatorInner {
+border-top: none !important;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+}
+
+.GGHFMYIBL-
+.popupTopCenter, .menuPopupTopCenter, .suggestPopupTopCenter,
+.popupTopLeft, .menuPopupTopLeft, .suggestPopupTopLeft,
+.popupMiddleLeft, .menuPopupMiddleLeft, .suggestPopupMiddleLeft,
+.popupBottomLeft, .menuPopupBottomLeft, .suggestPopupBottomLeft,
+.popupBottomCenter, .menuPopupBottomCenter, .suggestPopupBottomCenter,
+.popupBottomRight, .menuPopupBottomRight, .suggestPopupBottomRight,
+.popupMiddleRight, .menuPopupMiddleRight, .suggestPopupMiddleRight,
+ .popupTopRight, .menuPopupTopRight, .suggestPopupTopRight
+  {
+background: none #303030 !important;
+}
+
+.gwt-MenuBar>table {
+background: none #303030 !important;
+}
+
+/* install popup */
+.gwt-DialogBox-ModalDialog, .gwt-DecoratedPopupPanel {
+background-color: #303030 !important;
+}
+
+.gwt-DialogBox .dialogTopLeft {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogTopCenterInner .Caption {
+font-weight: bold !important;
+padding-left: 8px !important;
+margin-bottom: -8px !important;
+background-color: #9e9e9e !important;
+margin-left: 0px !important;
+color: #202020 !important;
+}
+
+.gwt-DialogBox .dialogTopCenter, .GGHFMYIBJQ .popupTopCenter {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogTopRight {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogMiddleLeft, .GGHFMYIBJQ .popupMiddleLeft {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogMiddleCenter, .GGHFMYIBJQ .popupMiddleCenter {
+background: #9e9e9e !important;
+color: #303030 !important;
+padding-left: 8px !important;
+padding-right: 8px !important;
+
+}
+.GGHFMYIBKWB {
+background-color: #6e6e6e !important;
+}
+
+.gwt-DialogBox .dialogMiddleRight, .GGHFMYIBJQ .popupMiddleRight {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogBottomLeft, .GGHFMYIBJQ .popupBottomLeft {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogBottomCenter, .GGHFMYIBJQ .popupBottomCenter {
+background: none !important;
+}
+
+.gwt-DialogBox .dialogBottomRight, .GGHFMYIBJQ .popupBottomRight {
+background: none !important;
+}
+
+.GGHFMYIBL- .popupMiddleCenter, .menuPopupMiddleCenter, .suggestPopupMiddleCenter {
+background-color: #9e9e9e !important;
+color: #202020 !important;
+}
+
+
+/* addins */
+.GGHFMYIBDGB>div {
+min-height: 16px !important;
+background: none #303030 !important;
+color: #9e9e9e !important;
+}
+
+.GGHFMYIBH {
+background: none #303030 !important;
+color: #9e9e9e !important;
+}
+
+.GGHFMYIBDFB {
+border: 1px solid transparent !important;
+font-weight: bold !important;
+color: #9e9e9e !important;
+background-color: #303030 !important;
+}
+.GGHFMYIBERC {
+background: none; 
+color: #9e9e9e;
+}
+
+.GGHFMYIBEPB {
+background: none #9e9e9e !important;
+color: #ff6600 !important;
+font-weight: bold !important;
+}
+
+.gwt-MenuItem {
+background-color: #9e9e9e;
+color: #303030 !important;
+}
+.gwt-MenuItem-selected, .subMenuIcon-selected, .gwt-SuggestBoxPopup .item-selected {
+background-color: #6e6e6e !important;
+color: #ff6600 !important;
+font-weight: bold;
+}
+
+/* ------------ */

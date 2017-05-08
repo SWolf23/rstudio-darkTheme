@@ -1,0 +1,413 @@
+/*
+
+CUSTOM COLORS TO MAKE RSTUDIO DARK
+
+Original file from from zencoder with install guide can be found here:
+https://support.rstudio.com/hc/en-us/community/posts/115000437028-Dark-style-for-R-Studio-IDE
+
+With mayor changes from DdS 3.5.2017
+Looks nice with the "Vibrant Ink" Apperance
+*/
+
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'DejaVu Sans', 'Lucida Grande', 'Segoe UI', Verdana, Helvetica, sans-serif;
+    background-color: #202022;
+}
+
+thead {
+    color: #555555;
+    background-color: #f7f8f9;
+}
+
+#rsGridData {
+    margin: 0px 0px 36px 0px;
+}
+
+table.dataTable tbody td {
+    padding: 4px 5px;
+    border-bottom: 1px solid #cfd4d8;
+    border-right: 1px solid #cfd4d8;
+    font-size: 11px;
+}
+
+th {
+    text-align: left; 
+}
+
+th, table.dataTable tbody td:first-child {
+    font-size: 11px;
+    color: #555555;
+    background-color: #f7f8f9;
+    font-weight: bold;
+}
+
+table.dataTable tbody td:first-child {
+    text-align: right; 
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    padding: 5px 5px;
+    border-bottom: 1px solid #cfd4d8;
+    border-right: 1px solid #cfd4d8;
+}
+
+table.dataTable thead th:first-child {
+    background: none;
+}
+
+table.dataTable th div:first-child {
+    margin-right: 12px;
+}
+
+.dataTables_wrapper.no-footer .dataTables_scrollBody {
+    border: none;
+}
+
+table.dataTable {
+    display: block;
+}
+
+#errorWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%;
+    margin-top: 10%;
+    text-align: center;
+    display: none;
+    padding: 30px;
+    font-size: 12px;
+    border: 2px solid #e0e0e0;
+    z-index: 100;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    left: 29%;
+}
+
+.errorWrapper input {
+    margin-top: 30px;
+}
+
+#error
+{
+}
+
+#errorMask {
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    display: none;
+    position: absolute;
+}
+
+.colFilter {
+    border: 1px solid #c0c0c0;
+    border-radius: 1px;
+    margin-top: 4px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    white-space: nowrap;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 2px; 
+    padding-bottom: 2px; 
+    position: relative;
+    font-weight: normal;
+}
+
+.unfiltered {
+    font-style: italic;
+    color: #abacad;
+    min-width: 35px;
+}
+
+.filterPopup {
+    position: absolute;
+    overflow: hidden;
+    z-index: 25;
+    font-size: 11px;
+    background-color: #ffffff;
+    border: 1px solid #cfd4d8;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+.numericFilterPopup {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 8px;
+}
+
+.choiceList {
+    max-height: 300px;
+    max-width: 400px;
+    min-width: 50px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.choiceListItem {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 400px;
+}
+
+.choiceListItem:hover {
+    background-color: #bce0fc;
+}
+
+.filterValue {
+    padding-right: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.textFilterBox {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+.textFilterBox:focus {
+    outline: none;
+}
+
+.clearFilter {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 11px;
+    height: 11px;
+    padding: 2px;
+}
+
+#filterActions {
+    margin-top: 3px;
+    text-align: right;
+}
+
+table.dataTable thead .sorting {
+    background: url("datatables/images/sort_both.png") no-repeat right top;
+}
+
+table.dataTable thead .sorting_desc {
+    background: url("datatables/images/sort_desc.png") no-repeat right top;
+}
+
+table.dataTable thead .sorting_asc {
+    background: url("datatables/images/sort_asc.png") no-repeat right top;
+}
+
+th:focus {
+    outline: none;
+}
+
+.colLabel {
+    font-size: 10px;
+    font-weight: normal;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 2px;
+    max-width: 300px;
+}
+
+.numSlider {
+    font-size: 9px;
+    width: 150px;
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.numMin {
+    width: 75px;
+    padding-left: 4px;
+    text-align: left;
+    display: inline-block;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.numMax {
+    width: 75px;
+    text-align: right;
+    padding-right: 4px;
+    display: inline-block;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+#rsGridData_info {
+    background-color: #f7f8f9;
+    font-size: 11px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border-top: 1px solid #cfd4d8;
+    height: 25px;
+    text-align: left;
+}
+
+.numberCell {
+    text-align: right;
+}
+
+.numberCell, .textCell {
+    max-width: 300px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.searchMatch {
+    background-color: #e8e8ff;
+}
+
+.naCell {
+    color: #b0b0b0;
+    font-style: italic;
+}
+
+div.DTS div.DTS_Loading {
+    border: none;
+    background: none;
+    color: #ffffff;
+}
+
+div.DTS div.DTS_Loading.showLoading {
+    transition: color 0.5s ease;
+    color: #aaabac;
+} 
+
+#rsGridData tbody tr.even {
+    background-color: #fdfdfd;
+}
+
+#rsGridData tbody tr.even, 
+#rsGridData tbody tr.odd {
+    height: 23px;
+}
+
+#rsGridData {
+    display: block;
+}
+
+
+
+
+
+
+
+/***************************************/
+body {
+	color: #9e9e9e !important;
+  background: none #202022 !important;
+}
+
+::-webkit-scrollbar {
+    width:9px; height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background:#262628;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#9e9e9e;
+}
+
+thead {
+    color: #999999;
+    background-color: #303032;
+}
+
+table.dataTable tbody td {
+    border-bottom: 1px solid #283C5A;
+    border-right: 1px solid #283C5A;
+}
+
+th, table.dataTable tbody td:first-child {
+    color: #999999;
+    background-color: #303032;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+    border-bottom: 1px solid #283C5A;
+    border-right: 1px solid #283C5A;
+}
+
+.colFilter {
+    border: 1px solid #283C5A;
+    background-color: #202020;
+}
+
+.unfiltered {
+    color: #abacad;
+}
+
+.filterPopup {
+    background-color: #303033;
+    border: 1px solid #283C5A;
+}
+
+.choiceListItem:hover {
+    background-color: #bce0fc;
+}
+
+#rsGridData_info {
+	color: #9e9e9e !important;
+    background-color: #303032;
+    border-top: 1px solid #283C5A;
+}
+
+.searchMatch {
+		color: #eeeeee;
+    background-color: #0b5fbb;
+}
+
+.naCell {
+    color: #9e9e9e;
+}
+
+div.DTS div.DTS_Loading {
+    color: #ffffff;
+}
+
+div.DTS div.DTS_Loading.showLoading {
+    transition: color 0.5s ease;
+    color: #aaabac;
+} 
+
+#rsGridData tbody tr {
+	color: #9e9e9e !important;
+  background: none #202022 !important;
+}
+#rsGridData tbody tr.even {
+  background: none #252528 !important;
+}
+
+div.DTS div.dataTables_scrollHead, div.DTS div.dataTables_scrollFoot {
+background-color: #303032;
+}

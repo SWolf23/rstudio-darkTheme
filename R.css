@@ -1,0 +1,117 @@
+/*
+ * R.css
+ *
+ * Copyright (C) 2009-16 by RStudio, Inc.
+ *
+ * Unless you have received this program directly from RStudio pursuant
+ * to the terms of a commercial license agreement with RStudio, then
+ * this program is licensed to you under the terms of version 3 of the
+ * GNU Affero General Public License. This program is distributed WITHOUT
+ * ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING THOSE OF NON-INFRINGEMENT,
+ * MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Please refer to the
+ * AGPL (http://www.gnu.org/licenses/agpl-3.0.txt) for more details.
+ *
+ */
+
+body, td {
+   font-family: sans-serif;
+   font-size: 10pt;
+}
+
+::selection {
+   background: rgb(181, 213, 255);
+}
+
+::-moz-selection{
+   background: rgb(181, 213, 255);
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+h1 {
+   font-size: x-large;
+}
+
+h2 {
+   font-size: x-large;
+   font-weight: normal;
+}
+
+h3 {
+   color: rgb(35%, 35%, 35%);
+}
+
+h4 {
+   color: rgb(35%, 35%, 35%);
+   font-style: italic;
+}
+
+h5 {
+   color: rgb(35%, 35%, 35%);
+}
+
+h6 {
+   color: rgb(35%, 35%, 35%);
+   font-style: italic;
+}
+
+img.toplogo {
+   max-width: 4em;
+   vertical-align: middle;
+}
+
+img.arrow {
+   width: 30px;
+   height: 30px;
+   border: 0;
+}
+
+span.acronym {
+   font-size: small;
+}
+
+span.env {
+   font-family: monospace;
+}
+
+span.file {
+   font-family: monospace;
+}
+
+span.option {
+   font-family: monospace;
+}
+
+span.pkg {
+   font-weight: bold;
+}
+
+span.samp {
+   font-family: monospace;
+}
+
+div.vignettes a:hover {
+   background: rgb(85%, 85%, 85%);
+}
+
+table p {
+   margin-top: 0;
+   margin-bottom: 6px;
+}
+
+
+
+
+/**************************/
+html * {
+    color: #9e9e9e !important;
+   	background-color: #1E1E1E !important;
+    border-color: #283C5A !important;
+  }
+
+  a, a *                 { color: #5C84AC !important; text-decoration: none; }
+  a:visited, a:visited * { color: #3C648C !important; }
+  a:hover,   a:hover   * { color: #7CA4CC !important; border-bottom: 1px dotted #7CA4CC !important;}
+  h1, h2, h3, h4, h5, h6 { color: #1F5282 !important; }
