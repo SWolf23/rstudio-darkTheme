@@ -13,7 +13,7 @@ I posted my solution on stackoverflow.
 http://stackoverflow.com/questions/25624825/changing-background-color-in-rstudio/43760025#43760025
 
 But as it is work in Progress i decided to move the project to GitHub.
-
+https://github.com/SWolf23/rstudio-darkTheme
 
 The following instuctions are from zencoder and not edited
 
