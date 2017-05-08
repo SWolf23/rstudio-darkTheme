@@ -310,7 +310,7 @@ body {
 }
 
 
-/* Changes 5.5.17  custom styles */
+/* Changes 8.5.17  custom styles */
 
 /* Background autocomplete */
 .windows .GGHFMYIBBU, .windows .GGHFMYIBBU td, .windows .GGHFMYIBBU pre, .ubuntu_mono .GGHFMYIBBU, .ubuntu_mono .GGHFMYIBBU td, .ubuntu_mono .GGHFMYIBBU pre {
@@ -318,6 +318,13 @@ line-height: 1.2 !important;
 background-color: #303030;
 color: #9e9e9e;
 }
+/* Auto Complete Selected */
+.GGHFMYIBEPB {
+background: none #9e9e9e !important;
+color: #ff6600 !important;
+font-weight: bold !important;
+}
+
 
 /* pop up ctr+f */
 .GGHFMYIBKAC div, .GGHFMYIBKAC td {
@@ -339,7 +346,7 @@ color: rgb(236, 174, 28) !important;
 background-color: transparent !important;
 }
 
-/* envirment */
+/* enviroment */
 /* highlighted from search */
 .GGHFMYIBOSB {
 background-color: #9e9e9e !important;
@@ -356,14 +363,20 @@ background: none !important; }
 background-color: #ff6600 !important;
 }
 
+/* Drop Down Menu's */
 .gwt-MenuItem {
-background: none  #9e9e9e !important;
+background-color: #9e9e9e;
 color: #303030 !important;
 }
 .gwt-MenuItemSeparator .menuSeparatorInner {
 border-top: none !important;
 margin-top: 0px !important;
 margin-bottom: 0px !important;
+}
+.gwt-MenuItem-selected, .subMenuIcon-selected, .gwt-SuggestBoxPopup .item-selected {
+background-color: #6e6e6e !important;
+color: #ff6600 !important;
+font-weight: bold;
 }
 
 .GGHFMYIBL-
@@ -467,22 +480,6 @@ background-color: #303030 !important;
 .GGHFMYIBERC {
 background: none; 
 color: #9e9e9e;
-}
-
-.GGHFMYIBEPB {
-background: none #9e9e9e !important;
-color: #ff6600 !important;
-font-weight: bold !important;
-}
-
-.gwt-MenuItem {
-background-color: #9e9e9e;
-color: #303030 !important;
-}
-.gwt-MenuItem-selected, .subMenuIcon-selected, .gwt-SuggestBoxPopup .item-selected {
-background-color: #6e6e6e !important;
-color: #ff6600 !important;
-font-weight: bold;
 }
 
 /* ------------ */
