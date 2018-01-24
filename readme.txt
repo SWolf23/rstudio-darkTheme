@@ -1,3 +1,11 @@
+Hi all
+
+as Rstudio has dark theme now included i droped this project and will not follow it anymore.
+It is to time intensiv for me as i don't programm in javascript what would have been a more stable solution then mine.
+
+Swolf
+
+
 CUSTOM COLORS TO MAKE RSTUDIO DARK
 
 Hi all
@@ -19,7 +27,7 @@ The following instuctions are from zencoder and not edited
 
 Have fun with this hope it helps.
 
-DdS
+SWolf
 
 
 ---------------------------------
